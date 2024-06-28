@@ -2,8 +2,8 @@
 
 /* Estilos básicos para el cuerpo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #d2ebe8; /* Lighter Aqua Green */
     margin: 0;
     padding: 0;
 }
@@ -56,7 +56,7 @@ select {
 button[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #8eaaaa; /* Light Grayish Green */
     border: none;
     border-radius: 4px;
     color: #ffffff;
@@ -67,7 +67,7 @@ button[type="submit"] {
 
 /* Estilos para los botones en estado de "hover" */
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #6b8e8e; /* Grayish Green */
 }
 
 /* Estilos para las alertas */
