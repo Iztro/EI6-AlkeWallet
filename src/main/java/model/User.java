@@ -17,6 +17,8 @@ public class User {
     private String username;
     private String password;
     private Double balance;
+    private String secret;
+    private boolean is2faEnabled;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private Set<Transaction> transactions;
@@ -61,6 +63,22 @@ public class User {
 
 	public void setTransactions(Set<Transaction> transactions) {
 		this.transactions = transactions;
+	}
+
+	public boolean is2faEnabled() {
+		return is2faEnabled;
+	}
+
+	public void setIs2faEnabled(boolean is2faEnabled) {
+		this.is2faEnabled = is2faEnabled;
+	}
+
+	public String getSecret() {
+		return secret;
+	}
+
+	public void setSecret(String secret) {
+		this.secret = secret;
 	}
 
     
