@@ -29,7 +29,7 @@ public class SecurityConfig {
         http
             .authorizeHttpRequests(authorizeRequests ->
                 authorizeRequests
-                .requestMatchers("/registration", "/2fa-setup", "/2fa-verify").permitAll()      
+                .requestMatchers("/registration", "/css/**", "/js/**", "/2fa-setup", "/2fa-verify").permitAll()      
                 .anyRequest().authenticated()
             )
             .formLogin(formLogin ->
