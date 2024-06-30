@@ -11,20 +11,20 @@ import java.util.Set;
 
 @Entity
 public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String username;
-    private String password;
-    private Double balance;
-    private String secret;
-    private boolean is2faEnabled;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	private String username;
+	private String password;
+	private Double balance;
+	private String secret;
+	private boolean is2faEnabled;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private Set<Transaction> transactions;
+	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+	private Set<Transaction> transactions;
 
-    // Getters and setters
-    
+	// Getters and setters
+
 	public Long getId() {
 		return id;
 	}
@@ -81,6 +81,4 @@ public class User {
 		this.secret = secret;
 	}
 
-    
-    
 }
